@@ -1,16 +1,14 @@
-sidebar-container-left-right {
+.sidebar-container-left-right {
   display: flex;
   flex: 1;
   position: relative;
-  width: 100%;
-  min-height: 100vh;
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom: 0;
   width: 60px;
-  height: 100%;
   background-color: lightblue;
   display: flex;
   flex-direction: column;
@@ -31,7 +29,51 @@ sidebar-container-left-right {
 
 .sidebar-icons img {
   height: 50px;
-  margin-top: 500px;
+  width: auto;
+}
+
+/* Group icons for specific sections */
+/* First group - proficient skill-set (left sidebar) */
+.left-sidebar .sidebar-icons:nth-child(1) {
+  margin-top: 250px; /* Position near "proficient skill-set" */
+}
+.left-sidebar .sidebar-icons:nth-child(2),
+.left-sidebar .sidebar-icons:nth-child(3) {
+  margin-top: 15px;
+}
+
+/* Second group - familiar with (left sidebar) */
+.left-sidebar .sidebar-icons:nth-child(4) {
+  margin-top: 350px; /* Position near "familiar with" */
+}
+.left-sidebar .sidebar-icons:nth-child(5),
+.left-sidebar .sidebar-icons:nth-child(6),
+.left-sidebar .sidebar-icons:nth-child(7) {
+  margin-top: 15px;
+}
+
+/* First group - currently learning (right sidebar) */
+.sidebar-right .sidebar-icons:nth-child(1) {
+  margin-top: 250px; /* Position near "currently learning" */
+}
+.sidebar-right .sidebar-icons:nth-child(2),
+.sidebar-right .sidebar-icons:nth-child(3) {
+  margin-top: 15px;
+}
+
+/* Second group - plan to learn (right sidebar) */
+.sidebar-right .sidebar-icons:nth-child(4) {
+  margin-top: 350px; /* Position near "plan to learn soon" */
+}
+.sidebar-right .sidebar-icons:nth-child(5),
+.sidebar-right .sidebar-icons:nth-child(6) {
+  margin-top: 15px;
+}
+
+/* Add z-index to ensure icons are clickable */
+.sidebar-icons img {
+  position: relative;
+  z-index: 20;
 }
 
 @media (max-width: 750px) {
