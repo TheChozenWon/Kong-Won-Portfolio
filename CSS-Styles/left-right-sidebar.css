@@ -1,16 +1,14 @@
-sidebar-container-left-right {
+.sidebar-container-left-right {
   display: flex;
   flex: 1;
   position: relative;
-  width: 100%;
-  min-height: 100vh;
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom: 0;
   width: 60px;
-  height: 100%;
   background-color: lightblue;
   display: flex;
   flex-direction: column;
@@ -31,7 +29,45 @@ sidebar-container-left-right {
 
 .sidebar-icons img {
   height: 50px;
-  margin-top: 500px;
+  width: auto;
+}
+
+.left-sidebar .sidebar-icons:nth-child(1) {
+  margin-top: 150px;
+}
+.left-sidebar .sidebar-icons:nth-child(2),
+.left-sidebar .sidebar-icons:nth-child(3) {
+  margin-top: 15px;
+}
+
+.left-sidebar .sidebar-icons:nth-child(4) {
+  margin-top: 250px;
+}
+.left-sidebar .sidebar-icons:nth-child(5),
+.left-sidebar .sidebar-icons:nth-child(6),
+.left-sidebar .sidebar-icons:nth-child(7) {
+  margin-top: 15px;
+}
+
+.sidebar-right .sidebar-icons:nth-child(1) {
+  margin-top: 150px;
+}
+.sidebar-right .sidebar-icons:nth-child(2),
+.sidebar-right .sidebar-icons:nth-child(3) {
+  margin-top: 15px;
+}
+
+.sidebar-right .sidebar-icons:nth-child(4) {
+  margin-top: 250px;
+}
+.sidebar-right .sidebar-icons:nth-child(5),
+.sidebar-right .sidebar-icons:nth-child(6) {
+  margin-top: 15px;
+}
+
+.sidebar-icons img {
+  position: relative;
+  z-index: 10;
 }
 
 @media (max-width: 750px) {
