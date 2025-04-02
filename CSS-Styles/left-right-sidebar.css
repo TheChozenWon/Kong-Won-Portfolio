@@ -32,19 +32,16 @@
   width: auto;
 }
 
-/* Group icons for specific sections */
-/* First group - proficient skill-set (left sidebar) */
 .left-sidebar .sidebar-icons:nth-child(1) {
-  margin-top: 250px; /* Position near "proficient skill-set" */
+  margin-top: 150px;
 }
 .left-sidebar .sidebar-icons:nth-child(2),
 .left-sidebar .sidebar-icons:nth-child(3) {
   margin-top: 15px;
 }
 
-/* Second group - familiar with (left sidebar) */
 .left-sidebar .sidebar-icons:nth-child(4) {
-  margin-top: 350px; /* Position near "familiar with" */
+  margin-top: 250px;
 }
 .left-sidebar .sidebar-icons:nth-child(5),
 .left-sidebar .sidebar-icons:nth-child(6),
@@ -52,28 +49,25 @@
   margin-top: 15px;
 }
 
-/* First group - currently learning (right sidebar) */
 .sidebar-right .sidebar-icons:nth-child(1) {
-  margin-top: 250px; /* Position near "currently learning" */
+  margin-top: 150px;
 }
 .sidebar-right .sidebar-icons:nth-child(2),
 .sidebar-right .sidebar-icons:nth-child(3) {
   margin-top: 15px;
 }
 
-/* Second group - plan to learn (right sidebar) */
 .sidebar-right .sidebar-icons:nth-child(4) {
-  margin-top: 350px; /* Position near "plan to learn soon" */
+  margin-top: 250px;
 }
 .sidebar-right .sidebar-icons:nth-child(5),
 .sidebar-right .sidebar-icons:nth-child(6) {
   margin-top: 15px;
 }
 
-/* Add z-index to ensure icons are clickable */
 .sidebar-icons img {
   position: relative;
-  z-index: 20;
+  z-index: 10;
 }
 
 @media (max-width: 750px) {
