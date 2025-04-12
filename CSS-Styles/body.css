@@ -153,17 +153,32 @@ body {
   color: red;
 }
 
-#my-story,
+#my-story-container,
+#about-me-container,
 #project-txt {
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  text-align: left;
   font-style: italic;
   font-size: 15px;
   font-weight: bold;
 }
 
+#my-story-container p,
+#about-me-container p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
 @media (max-width: 750px) {
-  .my-story {
-    width: auto;
-    overflow: auto;
+  #my-story-container,
+  #about-me-container {
+    width: 95%;
   }
 }
 
