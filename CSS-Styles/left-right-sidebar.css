@@ -71,7 +71,7 @@
 }
 
 @media (max-width: 750px) {
-  .sidebar-left {
+  .sidebar {
     display: none;
   }
 }
