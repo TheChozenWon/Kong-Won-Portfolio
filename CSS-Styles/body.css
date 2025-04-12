@@ -45,6 +45,23 @@ body {
     sans-serif;
 }
 
+.titles {
+  font-size: 2em;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 750px) {
   html,
   body {
@@ -183,7 +200,8 @@ object {
 
 .floating-box {
   width: 20%;
-  background-color: rgb(1, 255, 56);
+  color: white;
+  background-color: black;
   box-sizing: border-box;
   border: 2px solid #3498db;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -192,6 +210,7 @@ object {
 }
 
 .floating-box:nth-child(2) {
+  color: black;
   background-color: rgb(1, 255, 56);
 }
 
