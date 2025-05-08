@@ -120,22 +120,39 @@ body {
   border-bottom: 1px solid grey;
 }
 
-#intro {
+.intro {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10rem auto;
 }
 
-#intro h1 {
+.intro h1 {
   font-size: 3em;
 }
 
 @media (max-width: 750px) {
-  #intro,
-  #intro h1 {
-    font-size: 1em;
+  .intro,
+  .intro h1 {
+    font-size: 1.2em;
   }
+}
+
+@media (max-width: 750px) {
+  #name2 {
+    font-size: 0.65em !important;
+  }
+}
+
+#name2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.text-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 5em;
 }
 
 .profile-pic {
