@@ -138,12 +138,6 @@ body {
   }
 }
 
-@media (max-width: 750px) {
-  #name2 {
-    font-size: 0.65em !important;
-  }
-}
-
 #name2 {
   font-size: 1.2em;
   font-weight: normal;
